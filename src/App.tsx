@@ -1,24 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import "./assets/bootstrap/scss/_custom_scss.scss"
+import './assets/css/mystyle.scss'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import APP_URLS from './urls';
+import Home from './views/home.view';
+import About from './views/about.view';
+import Services from './views/services.view';
+import Page404 from './views/page404.view';
+import Careers from './views/careers.view';
 
-function App() {
+const App: React.FC<any> = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="wrapper">
+      <BrowserRouter>
+        <Routes>
+          <Route path={APP_URLS.home} element={<Home />} />
+          <Route path={APP_URLS.about} element={<About/>} />
+          <Route path={APP_URLS.services} element={<Services/>} />
+          <Route path={APP_URLS.careers} element={<Careers/>} />
+          <Route path='/*' element={<Page404 />}
+           />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
