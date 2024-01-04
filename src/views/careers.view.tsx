@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Careers = () => {
+const Careers:React.FC<any> = () => {
   return (
     <div>Careers</div>
   )

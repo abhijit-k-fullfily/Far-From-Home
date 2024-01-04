@@ -9,6 +9,7 @@ import About from './views/about.view';
 import Services from './views/services.view';
 import Page404 from './views/page404.view';
 import Careers from './views/careers.view';
+import Typography from './views/typography.view';
 
 const App: React.FC<any> = () => {
   return (
@@ -19,6 +20,7 @@ const App: React.FC<any> = () => {
           <Route path={APP_URLS.about} element={<About/>} />
           <Route path={APP_URLS.services} element={<Services/>} />
           <Route path={APP_URLS.careers} element={<Careers/>} />
+          <Route path={APP_URLS.typography} element={<Typography/>} />
           <Route path='/*' element={<Page404 />}
            />
         </Routes>

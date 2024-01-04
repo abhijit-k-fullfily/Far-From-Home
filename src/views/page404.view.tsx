@@ -1,9 +1,8 @@
 import React from 'react'
-
-const Page404 = () => {
+const Page404:React.FC<any> = () => {
   return (
     <div>Page404</div>
   )
 }
 
-export default Page404
+export default Page404;

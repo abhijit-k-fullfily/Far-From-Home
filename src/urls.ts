@@ -4,6 +4,7 @@ export const APP_URLS ={
   about : "/about",
   careers : "/careers",
   services : "/services",
+  typography : "/typography"
 }
 
 

@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Poppins:wght@500&display=swap');
+
+//theme colors
+$primary: #023047;
+$secondary: #F3F3F3;
+$info: #0081F8;
+$danger: rgb(255, 99, 132);
+$warning: #FFC501;
+$success : #05bc05;
+$background : #ffffff;
+$muted: #666C89;
+$white : #ffffff;
+$dark : #051126;
+
+//secondary colors
+$linear-transparent-purple : #4D44B51A;
+$light-purple : #C3B2E7;
+$light-purple-background : #c3b2e747;
+$yellow : #FFC501;
+$green : #028B5D;
+$orange : #FF5E00;
+$sky-blue-dark : #218EBC;
+$sky-blue : #8ECAE6;
+$dark-blue : #154C79;
+$dark-green : #0C513F;
+
+
+
+
+//gradients
+$yellow-gradient : linear-gradient(180deg, #F7C95F 0%, #FDB235 100%);
+$orange-gradient : linear-gradient(180deg, #F8C85D 0.06%, rgba(255, 94, 0, 0.77) 99.94%);
+$gray-gradient : linear-gradient(179deg, #063970 -47.98%, rgba(180, 183, 202, 0.04) 163.51%);
+
+
+//global css
+* {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+//typography classes
+.color-palettes {
+  height: 100px;
+  // width: 100px;
+  margin: 10px 0;
+  border-radius: 20px;
+}
+
+//backgrounds
+.bg-primary {
+  background-color: $primary !important;
+}
+
+.bg-secondary {
+  background-color: $secondary !important;
+}
+
+.bg-info {
+  background-color: $info !important;
+}
+
+.bg-danger {
+  background-color: $danger !important;
+}
+
+.bg-warning {
+  background-color: $warning !important;
+}
+
+.bg-success {
+  background-color: $success !important;
+}
+
+.bg-muted {
+  background-color: $muted !important;
+}
+.bg-dark {
+  background-color: $dark !important;
+}
+
+.bg-linear-transparent-purple {
+  background-color: $linear-transparent-purple !important;
+}
+
+.bg-light-purple {
+  background-color: $light-purple !important;
+}
+
+.bg-light-purple-background {
+  background-color: $light-purple-background !important;
+}
+
+.bg-yellow {
+  background-color: $yellow !important;
+}
+
+.bg-green {
+  background-color: $green !important;
+}
+
+.bg-orange {
+  background-color: $orange !important;
+}
+
+.bg-sky-blue-dark {
+  background-color: $sky-blue-dark !important;
+}
+
+.bg-sky-blue {
+  background-color: $sky-blue !important;
+}
+
+.bg-dark-blue {
+  background-color: $dark-blue !important;
+}
+
+.bg-dark-green {
+  background-color: $dark-green !important;
+}
+
+.bg-yellow-gradient {
+  background-image: $yellow-gradient !important;
+}
+
+.bg-orange-gradient {
+  background-image: $orange-gradient !important;
+}
+
+.bg-gray-gradient {
+  background-image: $gray-gradient !important;
+}
+
+//text
+.text-primary {
+  color: $primary;
+}
+
+.text-secondary {
+  color: $secondary;
+}
+
+.text-info {
+  color: $info;
+}
+
+.text-danger {
+  color: $danger;
+}
+
+.text-warning {
+  color: $warning;
+}
+
+.text-success {
+  color: $success;
+}
+
+.text-muted {
+  color: $muted;
+}
+.text-dark {
+  color: $dark;
+}
+
+.text-semi-bold {
+  font-weight: 600;
+}
+
+.text-medium-bold {
+  font-weight: 500;
+}
+
+.text-bold {
+  font-weight: 400;
+}
+
+//buttons
+.btn{
+  border-radius: 10px;
+  font-weight: 600;
+}
+.btn-shadow {
+  box-shadow: 0px 11px 44px 0px rgb(0 0 0 / 31%) !important;
+}
+.btn-rounded {
+  border-radius: 50px;
+}
+
+.btn-white {
+  background-color: $white;
+}
+
+.btn-primary {
+  background-color: $primary;
+  text-shadow: 0px 0px 17px #fff;
+  overflow: hidden;
+  position: relative;
+}
+.btn-dark {
+  background-color: $dark;
+  text-shadow: 0px 0px 17px #fff;
+}
+
+.button-pattern {
+  height: 40px;
+  width: 40px;
+  background: #1C1F35;
+  border-radius: 50px;
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+}
+
+.btn-warning {
+  color: $white;
+}
+
+//styles
+.wrapper {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  color: $dark;
+}

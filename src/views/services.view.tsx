@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Services = () => {
+const Services:React.FC<any> = () => {
   return (
     <div>Services</div>
   )
